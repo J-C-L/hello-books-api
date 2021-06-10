@@ -27,7 +27,7 @@ def test_get_all_books_with_records(client, two_saved_books):
         } 
     ]   
 
-def test_create_new_book(client, ):
+def test_create_new_book(client):
     # Act
     response = client.post("/books", 
         json={
